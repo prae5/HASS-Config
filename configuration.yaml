@@ -55,5 +55,17 @@ sensor:
 tts:
   platform: google
 
+# Add iOS support
+ios:
+
+# Add unifi device tracking
+device_tracker:
+  - platform: unifi
+    host: !secret host_unifi
+    username: !secret user_unifi
+    password: !secret pass_unifi
+    verify_ssl: false
+
+
 group: !include groups.yaml
 automation: !include automations.yaml
