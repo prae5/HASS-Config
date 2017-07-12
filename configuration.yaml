@@ -66,6 +66,10 @@ device_tracker:
     password: !secret pass_unifi
     verify_ssl: false
 
+# Add Z-Wave support
+zwave:
+    usb_path: /dev/ttyACM0
+
 
 group: !include groups.yaml
 automation: !include automations.yaml
