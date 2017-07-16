@@ -1,8 +1,8 @@
 homeassistant:
   name: Falconwood House
-  home_latitude: !secret home_latitude
-  home_longitude: !secret home_longitude
-  home_elevation: !secret home_elevation
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
   unit_system: metric
   time_zone: Europe/London
 
