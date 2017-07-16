@@ -1,11 +1,9 @@
 homeassistant:
   name: Falconwood House
-  latitude: !secret latitude
-  longitude: !secret longitude
-  elevation: 6.65
-  # metric for Metric, imperial for Imperial
+  home_latitude: !secret home_latitude
+  home_longitude: !secret home_longitude
+  home_elevation: !secret home_elevation
   unit_system: metric
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/London
 
 # Show links to resources in log and frontend
@@ -19,9 +17,9 @@ config:
 
 http:
   # Uncomment this to add a password (recommended!)
-  api_password: !secret api_password
+  api_password: !secret http_api_password
   # Uncomment this if you are using SSL or running in Docker etc
-  base_url: !secret base_url
+  base_url: !secret http_base_url
 
 # Checks for available updates
 # Note: This component will send some information about your system to
