@@ -70,6 +70,23 @@ device_tracker:
 zwave:
     usb_path: /dev/ttyACM0
 
+sensor home_to_bromium:
+  platform: google_travel_time
+  api_key: !secret google_api_key
+  name: Bromium
+  origin: IP28 8NL, UK
+  destination: CB2 8FH, UK
+  options:
+      units: imperial
 
-group: !include groups.yaml
+sensor home_to_qualcomm:
+  platform: google_travel_time
+  api_key: !secret google_api_key
+  name: Qualcomm
+  origin: IP28 8NL, UK
+  destination: CB4 0WN
+  options:
+      units: imperial
+
+group: !include groups.yaml                 
 automation: !include automations.yaml
