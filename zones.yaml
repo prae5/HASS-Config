@@ -1,0 +1,25 @@
+############################################################
+#
+# Zones
+#
+############################################################
+
+- name: Home
+  latitude: 52.365382
+  longitude: 0.513484
+  #radius: !secret zone1_radius 
+  #icon: mdi:briefcase
+
+- name: Bromium
+  latitude: 52.191376
+  longitude: 0.132802
+
+- name: Childminder
+  latitude: 52.346193
+  longitude: 0.513444
+
+- name: Qualcomm
+  latitude: 52.230725
+  longitude: 0.1461746
+
+

@@ -63,6 +63,7 @@ device_tracker:
     username: !secret user_unifi
     password: !secret pass_unifi
     verify_ssl: false
+    track_new_devices: false
 
 # Add Z-Wave support
 zwave:
@@ -88,3 +89,4 @@ sensor home_to_qualcomm:
 
 group: !include groups.yaml                 
 automation: !include automations.yaml
+zone: !include zones.yaml
